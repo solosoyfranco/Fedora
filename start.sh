@@ -65,76 +65,58 @@ while true; do
     clear
     case $CHOICE in 
         1) 
-            Scripts/enable_auto_updates.sh
+            scripts/enable_auto_updates.sh
         ;;
-       
         2) 
-            Scripts/enable_rpm_fusion.sh
+            /scripts/enable_rpm_fusion.sh
         ;;
-        
         3)
-            Scripts/enable_flathub.sh
+            ./scripts/enable_flathub.sh
         ;;
-
         4) 
-            Scripts/enable_snap.sh
+            scripts/enable_snap.sh
         ;;
-
         5) 
-            Scripts/optimize_boot.sh
+            scripts/optimize_boot.sh
         ;;
-
         6) 
-            Scripts/install_nvidia.sh
+            scripts/install_nvidia.sh
         ;;
-
         7) 
-            Scripts/install_auto_cpu.sh
+            scripts/install_auto_cpu.sh
         ;;
-
         8) 
-            Scripts/install_media_codecs.sh
+            scripts/install_media_codecs.sh
         ;;
-
         9)
-            Scripts/install_fonts.sh
+            scripts/install_fonts.sh
         ;;
-
         10)
-            Scripts/install_pop_shell.sh
+            scripts/install_pop_shell.sh
         ;;
-
         11)
-            Scripts/install_dracula_theme.sh
+            scripts/install_dracula_theme.sh
         ;;
-
         12)
-            Scripts/install_tools.sh
+            scripts/install_tools.sh
         ;;
-
         13)
-            Scripts/install_fish_tide.sh
+            scripts/install_fish_tide.sh
         ;;
-
         14) 
-            Scripts/install_apps.sh
+            scripts/install_apps.sh
         ;;
-
         15) 
-            Scripts/recover_button.sh
+            scripts/recover_button.sh
         ;;
-
         16) 
-            Scripts/secure_linux.sh
+            scripts/secure_linux.sh
         ;;
-
         17)
             sudo systemctl reboot
         ;;
-
         18) rm -rf CascadiaCode*
             exit 0
         ;;
-
     esac
 done

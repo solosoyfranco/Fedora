@@ -17,3 +17,4 @@ sudo dnf install rpmfusion-free-release-tainted -y
 sudo dnf install dnf-plugins-core -y
 notify-send "Enabled RPM Fusion"
 read -rp "Press any key to continue"
+
