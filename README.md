@@ -3,10 +3,20 @@ Welcome to my personal Fedora post installation guide. In this particular docume
 
 
 
+## How to install:
+Copy and paste this commands to your terminal:
 
-```bash
-wget -q -O - https://raw.githubusercontent.com/solosoyfranco/Fedora/start.sh | bash
-```
+  1. clone the script
+  ```bash 
+      git clone https://github.com/solosoyfranco/Fedora.git
+      cd ./Fedora
+  ```
+  2. make it executable & run it
+  ```bash 
+      chmod +x ./start.sh
+      ./start.sh
+  ```
+
 
 ## Screenshots
 
