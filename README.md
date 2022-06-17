@@ -1,11 +1,17 @@
+# Fedora Workstation
 Welcome to my personal Fedora post installation guide. In this particular document, I try to describe most of steps I do after a clean install of this awesome Linux distribution. Ideas and suggestions were collected from different sources and also from personal experience. Use this guide at your own risk and have fun with Fedora! 
 
 
 
+
 ```bash
-wget -q -O - https://raw.githubusercontent.com/solosoyfranco/Proxmox/main/01_Install/start.sh | bash
+wget -q -O - https://raw.githubusercontent.com/solosoyfranco/Fedora/start.sh | bash
 ```
 
+## Screenshots
+
+
+Note: This script is only compatible on Fedora GNOME (The default DE for Fedora Workstation)  
 ### Recommended tabs & Sources
 * https://extensions.gnome.org/
 * https://extensions.gnome.org/extension/779/clipboard-indicator/
