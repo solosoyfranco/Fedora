@@ -10,5 +10,5 @@
 sudo dnf install git -y
 git clone https://github.com/solosoyfranco/Fedora/
 cd ./Fedora
-sudo chmod a+x ./start_scripts.sh
-source start_scripts.sh
+sudo chmod a+x ./run_scripts.sh
+source run_scripts.sh
