@@ -16,5 +16,5 @@ git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 chmod +x ./auto-cpufreq/auto-cpufreq-installer
 sudo ./auto-cpufreq/auto-cpufreq-installer
 sudo auto-cpufreq --install
-notify-send "Installed auto-cpufreq"
+notify-send "Installed auto-cpu"
 read -rp "Press any key to continue"
