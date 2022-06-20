@@ -1,5 +1,5 @@
 # Fedora Workstation
-Welcome to my personal Fedora post installation guide. In this particular document, I try to describe most of steps I do after a clean install of this awesome Linux distribution. Ideas and suggestions were collected from different sources and also from personal experience. Use this guide at your own risk and have fun with Fedora! 
+Welcome to my personal Fedora post installation guide. In this particular document, I try to describe most of steps I do after a clean install of this awesome Linux distribution. Ideas and suggestions were collected from different sources and also from personal experience. 
 
 
 
@@ -8,20 +8,19 @@ Copy and paste this commands to your terminal:
 
   1. clone the script
   ```bash 
-      git clone https://github.com/solosoyfranco/Fedora.git
-      cd ./Fedora
+      git clone https://github.com/solosoyfranco/Fedora.git && cd ./Fedora
   ```
   2. make it executable & run it
   ```bash 
-      chmod +x ./start.sh
-      ./start.sh
+      chmod +x ./install.sh
+      ./install.sh
   ```
 
 
 ## Screenshots
 
-
-Note: This script is only compatible on Fedora GNOME (The default DE for Fedora Workstation)  
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+ 
 ### Recommended tabs & Sources
 * https://extensions.gnome.org/
 * https://extensions.gnome.org/extension/779/clipboard-indicator/
