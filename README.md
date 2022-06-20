@@ -19,7 +19,9 @@ Copy and paste this commands to your terminal:
 
 ## Screenshots
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](https://github.com/solosoyfranco/Fedora/blob/main/screenshot1.png?raw=true "neofetch")
+
+![Alt text](https://github.com/solosoyfranco/Fedora/blob/main/screenshot2.png?raw=true "install.sh")
  
 ### Recommended tabs & Sources
 * https://extensions.gnome.org/
