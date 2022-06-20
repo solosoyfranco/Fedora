@@ -85,7 +85,7 @@ while [ "$CHOICE -ne 4" ]; do
         5)  echo "Installing Tweaks, media codecs, extensions & plugins"
             sudo dnf groupupdate -y sound-and-video
             sudo dnf install -y gnome-tweaks
-            sudo dnf install -y libdvdcss libdrm-devel 
+            sudo dnf install -y libdvdcss libdrm-devel gtk3-devel gcc pkg-config
             sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,ugly-\*,base} gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg
             sudo dnf install -y lame\* --exclude=lame-devel
             sudo dnf group upgrade -y --with-optional Multimedia
@@ -155,6 +155,7 @@ while [ "$CHOICE -ne 4" ]; do
             sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
             #install remmina
             sudo dnf copr enable hubbitus/remmina-next -y
+            sudo dnf install -y remmina
             sudo dnf upgrade --refresh 'remmina*' 'freerdp*'
             #install discord
             flatpak install -y flathub com.discordapp.Discord
@@ -164,11 +165,28 @@ while [ "$CHOICE -ne 4" ]; do
             sudo mv betterdiscordctl /usr/local/bin
             betterdiscordctl --d-install flatpak install
             betterdiscordctl self-upgrade
-
+            #microsoft teams
+            sudo sh -c 'echo -e "[teams]\nname=teams\nbaseurl=https://packages.microsoft.com/yumrepos/ms-teams\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/teams.repo'
+            sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+            #spotify 
+            sudo flatpak install -y flathub com.spotify.Client
+            #Gimp
+            sudo flatpak install -y flathub org.gimp.GIMP
+            #network displays
+            sudo flatpak install -y flathub org.gnome.NetworkDisplays
+            #evolution email
+            sudo flatpak install -y flathub org.gnome.Evolution
+            #agenda to do
+            sudo flatpak install -y flathub com.github.dahenson.agenda
+            #dialect
+            sudo flatpak install -y flathub com.github.gi_lom.dialect
+            #inkscape
+            sudo flatpak install -y flathub org.inkscape.Inkscape
+            #Whatsapp
+            sudo flatpak install -y flathub com.rtosta.zapzap
             # install software
             sudo dnf check-update
-            sudo dnf install -y gnome-extensions-app gnome-tweaks gnome-shell-extension-appindicator vlc dnfdragora mscore-fonts-all google-noto-sans-fonts neofetch cmatrix p7zip unzip gparted google-chrome-stable clang cmake variety microsoft-edge-stable code htop brave-browser notion-app-enhanced
-            #need vsc more software
+            sudo dnf install -y gnome-extensions-app gnome-tweaks gnome-shell-extension-appindicator vlc dnfdragora mscore-fonts-all google-noto-sans-fonts neofetch cmatrix p7zip unzip gparted google-chrome-stable clang cmake variety microsoft-edge-stable code htop brave-browser notion-app-enhanced gnome-pomodoro teams lpf-spotify-client
             notify-send "Option 10 - Software has been installed" --expire-time=10
             ;;
         11)  echo "Installing Oh-My-Zsh"

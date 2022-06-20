@@ -1,5 +1,5 @@
-# Fedora Workstation
-Welcome to my personal Fedora post installation guide. In this particular document, I try to describe most of steps I do after a clean install of this awesome Linux distribution. Ideas and suggestions were collected from different sources and also from personal experience. 
+# Fedora Workstation - Post Install script
+Welcome to my personal Fedora installation script. In this particular document, I try to install most of the software I do use after a clean install of this awesome Linux distribution. Ideas and suggestions were collected from different sources and also from personal experience. 
 
 
 
@@ -19,12 +19,46 @@ Copy and paste this commands to your terminal:
 
 ## Screenshots
 
-![Alt text](https://github.com/solosoyfranco/Fedora/blob/main/screenshot1.png?raw=true "neofetch")
+![neofetch](https://github.com/solosoyfranco/Fedora/blob/main/screenshot1.png?raw=true "neofetch")
 
-![Alt text](https://github.com/solosoyfranco/Fedora/blob/main/screenshot2.png?raw=true "install.sh")
+![install.sh](https://github.com/solosoyfranco/Fedora/blob/main/screenshot2.png?raw=true "install.sh")
  
+
+
+## Apps (Option 10)
+
+* neofetch
+* cmatrix
+* htop
+* p7zip
+* gparted
+* Visual Studio Code
+* Notion app enhanced
+* VLC
+* dnfdragora
+* google chrome
+* microsoft edge
+* brave browser
+* discord
+* remmina
+* variety
+* pomodoro timer
+* Microsoft Teams
+* Spotify
+* GIMP
+* GNOME Network Display
+* Evolution email
+* Agenda To-do list
+* Dialect
+* Inkscape
+* Whatsapp
+
+
+
 ### Recommended tabs & Sources
 * https://extensions.gnome.org/
+* https://extensions.gnome.org/extension/307/dash-to-dock/
+* https://extensions.gnome.org/extension/19/user-themes/
 * https://extensions.gnome.org/extension/779/clipboard-indicator/
 * https://extensions.gnome.org/extension/615/appindicator-support/
 * https://github.com/mmalafaia/gse-sound-output-device-chooser/tree/patch-1
@@ -32,12 +66,8 @@ Copy and paste this commands to your terminal:
 * https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/
 * https://extensions.gnome.org/extension/1319/gsconnect/
 * https://extensions.gnome.org/extension/3843/just-perfection/
-* https://extensions.gnome.org/extension/19/user-themes/
 * https://extensions.gnome.org/extension/4245/gesture-improvements/
   * https://github.com/harshadgavali/gnome-gesture-improvements
-* https://github.com/vinceliuice/Colloid-gtk-theme
-* https://github.com/notion-enhancer/notion-repackaged
-  * https://notion-enhancer.github.io/getting-started/installation/
 * https://github.com/displaylink-rpm/displaylink-rpm 
 
 
