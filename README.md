@@ -61,6 +61,10 @@ Copy and paste this commands to your terminal:
 * Atom
 * PyCharm Pro
 * SQL client
+* Prusa Slicer
+* Ultimaker Cura
+* Firmware
+* QR Decoder
 
 
 
