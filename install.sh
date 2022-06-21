@@ -184,6 +184,27 @@ while [ "$CHOICE -ne 4" ]; do
             sudo flatpak install -y flathub org.inkscape.Inkscape
             #Whatsapp
             sudo flatpak install -y flathub com.rtosta.zapzap
+            #Filezilla
+            sudo flatpak install -y flathub org.filezillaproject.Filezilla
+            #parsec
+            sudo flatpak install -y flathub com.parsecgaming.parsec
+            #qbittorrent
+            sudo flatpak install -y flathub org.qbittorrent.qBittorrent
+            #thunderbild mail
+            sudo flatpak install -y flathub org.mozilla.Thunderbird
+            #Dolphin file explorer
+            sudo flatpak install -y flathub org.kde.dolphin
+            # Disk analyzer
+            sudo flatpak install -y flathub org.gnome.baobab
+            # Atom
+            sudo flatpak install -y flathub io.atom.Atom
+            #Pycharm pro
+            sudo flatpak install -y flathub com.jetbrains.PyCharm-Professional
+            # SQL client 
+            sudo flatpak install -y flathub com.github.alecaddd.sequeler
+
+
+
             # install software
             sudo dnf check-update
             sudo dnf install -y gnome-extensions-app gnome-tweaks gnome-shell-extension-appindicator vlc dnfdragora mscore-fonts-all google-noto-sans-fonts neofetch cmatrix p7zip unzip gparted google-chrome-stable clang cmake variety microsoft-edge-stable code htop brave-browser notion-app-enhanced gnome-pomodoro teams lpf-spotify-client
