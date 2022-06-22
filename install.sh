@@ -215,7 +215,7 @@ while [ "$CHOICE -ne 4" ]; do
 
             # install software
             sudo dnf check-update
-            sudo dnf install -y gnome-extensions-app gnome-tweaks gnome-shell-extension-appindicator vlc dnfdragora mscore-fonts-all google-noto-sans-fonts neofetch cmatrix p7zip unzip gparted google-chrome-stable clang cmake variety microsoft-edge-stable code htop brave-browser notion-app-enhanced gnome-pomodoro teams lpf-spotify-client prusa-slicer
+            sudo dnf install -y gnome-extensions-app gnome-tweaks gnome-shell-extension-appindicator vlc dnfdragora mscore-fonts-all google-noto-sans-fonts neofetch cmatrix p7zip unzip gparted google-chrome-stable clang cmake variety microsoft-edge-stable code htop brave-browser notion-app-enhanced gnome-pomodoro teams lpf-spotify-client prusa-slicer 
             notify-send "Option 10 - Software has been installed" --expire-time=10
             ;;
         11)  echo "Installing Oh-My-Zsh"

@@ -19,9 +19,11 @@ Copy and paste this commands to your terminal:
 
 ## Screenshots
 
-![neofetch](https://github.com/solosoyfranco/Fedora/blob/main/screenshot1.png?raw=true "neofetch")
+![install.sh](https://github.com/solosoyfranco/Fedora/blob/main/screenshot1.png?raw=true "install.sh")
 
-![install.sh](https://github.com/solosoyfranco/Fedora/blob/main/screenshot2.png?raw=true "install.sh")
+![neofetch](https://github.com/solosoyfranco/Fedora/blob/main/screenshot2.png?raw=true "neofetch")
+
+
  
 
 
