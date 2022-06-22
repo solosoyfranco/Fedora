@@ -21,7 +21,7 @@ Copy and paste this commands to your terminal:
 
 ![install.sh](https://github.com/solosoyfranco/Fedora/blob/main/screenshot1.png?raw=true "install.sh")
 
-![neofetch](https://github.com/solosoyfranco/Fedora/blob/main/screenshot2.png?raw=true "neofetch")
+![d3100](https://github.com/solosoyfranco/Fedora/blob/main/screenshot2.png?raw=true "Dell DisplayLink D3100 - 2x 25' dell 2k screens")
 
 
  
