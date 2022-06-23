@@ -94,11 +94,11 @@ while [ "$CHOICE -ne 4" ]; do
             sudo systemctl disable lvm2-monitor.service # i dont have my hdd encrypted
             # to see your loading time apps
             # systemd-analyze blame  
-            # Add VPN L2PT option
-            sudo dnf -y install xl2tpd
-            sudo dnf -y install NetworkManager-l2tp
-            sudo dnf -y install NetworkManager-l2tp-gnome
-            service NetworkManager restart
+            # Add VPN L2PT option --- not fully working with L2TP over ipsec
+            # sudo dnf -y install xl2tpd
+            # sudo dnf -y install NetworkManager-l2tp
+            # sudo dnf -y install NetworkManager-l2tp-gnome
+            # service NetworkManager restart
             notify-send "Option 5 - Tweaks and extras installed" --expire-time=10
             ;;
         6)
