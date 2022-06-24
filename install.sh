@@ -33,9 +33,9 @@ OPTIONS=(1  "Change Hostname"
          8  "Enable Flat Theme - Installs and Enables the Flat GTK and Icon themes"
          9  "Speed up DNF - This enables fastestmirror, max downloads and deltarpms"
          10 "Install Common Software - Installs a bunch of my most used software"
-         11 "Install Oh-My-ZSH"
+         11 "Install KVM virtualization software"
          12 "Install DisplayLink Dock (d3100)"
-         13 "KVM virtualization software"
+         13 "Install Oh-My-ZSH"
          14 "Reboot"
          15 "Quit")
 
@@ -215,34 +215,37 @@ while [ "$CHOICE -ne 4" ]; do
 
             # install software
             sudo dnf check-update
-            sudo dnf install -y gnome-extensions-app gnome-tweaks gnome-shell-extension-appindicator vlc dnfdragora mscore-fonts-all google-noto-sans-fonts neofetch cmatrix p7zip unzip gparted google-chrome-stable clang cmake variety microsoft-edge-stable code htop brave-browser notion-app-enhanced gnome-pomodoro teams lpf-spotify-client prusa-slicer 
+            sudo dnf install -y gnome-extensions-app gnome-tweaks gnome-shell-extension-appindicator vlc dnfdragora mscore-fonts-all google-noto-sans-fonts neofetch cmatrix p7zip unzip gparted google-chrome-stable clang cmake microsoft-edge-stable code htop brave-browser notion-app-enhanced gnome-pomodoro teams prusa-slicer blueman
             notify-send "Option 10 - Software has been installed" --expire-time=10
             ;;
-        11)  echo "Installing Oh-My-Zsh"
-            sudo dnf -y install zsh util-linux-user
-            sh -c "$(curl -fsSL $OH_MY_ZSH_URL)"
-            echo "change shell to ZSH"
-            chsh -s "$(which zsh)"
-            notify-send "Option 11 - Oh-My-Zsh is ready to rock n roll" --expire-time=10
-           ;;
-        12) echo "Install DisplayLink Dock (d3100)"
-            sudo dnf install -y libdrm-devel
-            #source: https://github.com/displaylink-rpm/displaylink-rpm
-            git clone https://github.com/displaylink-rpm/displaylink-rpm.git && cd displaylink-rpm
-            make github-release
-            openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out \
-            MOK.der -nodes -days 36500 -subj "/CN=Displaylink/"
-            sudo mokutil --import MOK.der
-            sudo rpm -i x86_64/displaylink-1.11.0-1.github_evdi.x86_64.rpm
-            notify-send "Option 12 - install RPM from the folder x86" --expire-time=10
-            ;;
-        13) echo "KVM virtualization software"
+        11) echo "KVM virtualization software"
             sudo dnf -y install bridge-utils libvirt virt-install qemu-kvm
             sudo dnf -y install libvirt-devel virt-top libguestfs-tools guestfs-tools
             sudo systemctl enable libvirtd
             sudo dnf -y install virt-manager
             notify-send "Option 13 - KVM installed" --expire-time=10
             ;;
+        12) echo "Install DisplayLink Dock (d3100)"
+            sudo dnf install -y libdrm-devel
+            ####source: https://github.com/displaylink-rpm/displaylink-rpm
+            # git clone https://github.com/displaylink-rpm/displaylink-rpm.git && cd displaylink-rpm
+            # make github-release
+            # openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out \
+            # MOK.der -nodes -days 36500 -subj "/CN=Displaylink/"
+            # sudo mokutil --import MOK.der
+            #### the above steps is only when you have secure boot enabled, and only works on fedora 35
+            #for fedora 36 you need the 1.11 driver that I add in the git
+            sudo rpm -i Displaylink/displaylink-1.11.0-1.github_evdi.x86_64.rpm
+            notify-send "Option 12 - install RPM from the folder x86" --expire-time=10
+            ;;
+        13)  echo "Installing Oh-My-Zsh"
+            sudo dnf -y install zsh util-linux-user
+            sh -c "$(curl -fsSL $OH_MY_ZSH_URL)"
+            echo "change shell to ZSH"
+            chsh -s "$(which zsh)"
+            notify-send "Option 11 - Oh-My-Zsh is ready to rock n roll" --expire-time=10
+           ;;
+        
         14)
             sudo systemctl reboot
         ;;

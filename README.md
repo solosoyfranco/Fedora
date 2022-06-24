@@ -43,7 +43,6 @@ Copy and paste this commands to your terminal:
 * brave browser
 * discord
 * remmina
-* variety
 * pomodoro timer
 * Microsoft Teams
 * Spotify
@@ -67,19 +66,34 @@ Copy and paste this commands to your terminal:
 * Ultimaker Cura
 * Firmware
 * QR Decoder
+* Bluetooth Manager
 
 
 
 ### Recommended tabs & Sources
-* https://extensions.gnome.org/
-* https://extensions.gnome.org/extension/307/dash-to-dock/
+* https://extensions.gnome.org/extension/307/dash-to-dock/  (Fedora 35)
+* https://extensions.gnome.org/extension/5004/dash-to-dock-for-cosmic/ (Fedora 36)
 * https://extensions.gnome.org/extension/19/user-themes/
 * https://extensions.gnome.org/extension/779/clipboard-indicator/
+* https://extensions.gnome.org/extension/1262/bing-wallpaper-changer/
 * https://extensions.gnome.org/extension/906/sound-output-device-chooser/
 * https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/
-* https://extensions.gnome.org/extension/3843/just-perfection/
 * https://extensions.gnome.org/extension/4245/gesture-improvements/
-* https://github.com/displaylink-rpm/displaylink-rpm 
+* https://extensions.gnome.org/extension/517/caffeine/
+* https://extensions.gnome.org/extension/4099/no-overview/
+* https://extensions.gnome.org/extension/3780/ddterm/
+* https://extensions.gnome.org/extension/2741/remove-alttab-delay-v2/
+* https://extensions.gnome.org/extension/4679/burn-my-windows/
 
 
+### Notes
+If your bluetooth doesn't connect with your headphones
+```bash 
+sudo nano /etc/bluetooth/main.conf 
+```
 
+locate and activate the following line
+
+```bash
+ControllerMode = dual
+```
